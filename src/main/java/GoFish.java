@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class GoFish {
     Player playerOne;
@@ -17,12 +18,6 @@ public class GoFish {
         this.deck.initDeck();
         this.deck.shuffle();
 
-
-    }
-
-    public void draw(){
-
-        playerOne.hand.add(deck.getCards().poll());
 
     }
 }
