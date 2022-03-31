@@ -8,18 +8,20 @@ public class GoFish {
 
 }
 
-public void run(){
+    public void run(){
 
-    this.playerOne = new Player();
-    this.playerTwo = new Player();
-    this.deck = new Deck();
+        this.playerOne = new Player();
+        this.playerTwo = new Player();
+        this.deck = new Deck();
 
-    this.deck.initDeck();
-    this.deck.shuffle();
+        this.deck.initDeck();
+        this.deck.shuffle();
 
-        for (int i = 0; i <8 ; i++) {
-            playerOne.hand.add(deck.getCards().poll());
-            playerTwo.hand.add(deck.getCards().poll());
-        }
+    }
+
+    public void draw(){
+
+        playerOne.hand.add(deck.getCards().poll());
+
     }
 }

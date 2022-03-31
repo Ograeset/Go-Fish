@@ -1,17 +1,24 @@
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+
 public class PlayingCardTest {
 
+    GoFish goFish = new GoFish();
+
+    @BeforeEach
+    public void initiateGame(){
+        goFish.run();
+    }
 
     @Test
     public void shouldBe52(){
 
-        Deck deck = new Deck();
-        deck.initDeck();
-        assertEquals(52,deck.getCards().size());
+        assertEquals(52,goFish.deck.getCards().size());
 
     }
 
@@ -27,9 +34,18 @@ public class PlayingCardTest {
 
     @Test
     public void playerCardsShouldNotBeNull(){
-        GoFish goFish = new GoFish();
-        goFish.run();
-        System.out.println(goFish.playerOne.hand + "\n" + goFish.playerTwo.hand);
-        assertNotNull(goFish.playerOne.hand + "\n" + goFish.playerTwo.hand);
+        
+        System.out.println(goFish.playerOne.hand);
+        assertNotNull(goFish.playerOne.hand);
+    }
+
+    @Test
+    public void draw(){
+
+        System.out.println(goFish.playerOne.hand);
+
+
+
+
     }
 }
