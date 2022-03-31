@@ -6,6 +6,10 @@ public class Card {
         this.suit = suit;
         this.number = number;
     }
+
+    public String toString(){
+        return number + " of " + suit;
+    }
 }
 
 
