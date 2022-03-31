@@ -11,6 +11,11 @@ public class Deck {
         return cards;
     }
 
+    public boolean getBool(){
+        if(cards.size()==52){
+            return false;
+        }else return true;
+    }
 
     public enum Number { Two, Three, Four, Five, Six, Seven,
         Eight, Nine, Ten, Jack, Queen, King, Ace }

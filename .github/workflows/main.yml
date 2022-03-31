@@ -1,4 +1,4 @@
-name: run TDD java JUnit 5 test
+name: run Go-Fish
 on: 
   push:
     branches: [ main ]

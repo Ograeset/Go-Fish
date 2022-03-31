@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.*;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -17,7 +20,7 @@ public class PlayingCardTest {
     @Test
     public void shouldBe52(){
 
-        assertEquals(52,goFish.deck.getCards().size());
+        Assertions.assertTrue(goFish.deck.getBool());
 
     }
 
@@ -47,12 +50,5 @@ public class PlayingCardTest {
 
         System.out.println(goFish.playerOne.hand);
         Assertions.assertNotEquals("", goFish.playerOne.hand);
-    }
-
-    @Test
-    public void draw(){
-
-        System.out.println(goFish.playerOne.hand);
-
     }
 }
