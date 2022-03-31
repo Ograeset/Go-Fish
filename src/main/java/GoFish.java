@@ -17,6 +17,7 @@ public class GoFish {
         this.deck.initDeck();
         this.deck.shuffle();
 
+
     }
 
     public void draw(){
