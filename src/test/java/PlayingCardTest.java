@@ -21,5 +21,5 @@ public class PlayingCardTest {
         assertEquals(52,deck.getCards().size() );
     }
 
-    
+
 }
