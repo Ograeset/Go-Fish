@@ -11,6 +11,7 @@ public class SeleniumTest {
 
     @Test
     public void andreasTest() throws InterruptedException {
+
         WebDriverManager.chromedriver().setup();
 
         WebDriver webDriver = new ChromeDriver();
@@ -29,9 +30,8 @@ public class SeleniumTest {
         searchBox.sendKeys("Tillbaka till framtiden");
         searchButton.click();
 
-        String title = webDriver.findElement(By.className("result_text")).toString();
-
-
+        String title = webDriver.findElement(By.className("result_text")).getAttribute("href");
 
     }
+
 }

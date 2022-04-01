@@ -48,7 +48,6 @@ public class PlayingCardTest {
             goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         }
 
-        System.out.println(goFish.playerOne.hand);
-        Assertions.assertNotEquals("", goFish.playerOne.hand);
+        Assertions.assertNotEquals("", goFish.playerOne.hand.toString());
     }
 }
