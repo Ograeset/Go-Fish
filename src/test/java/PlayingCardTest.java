@@ -47,14 +47,6 @@ public class PlayingCardTest {
         assertNotNull(goFish.playerOne.hand);
     }
 
-    @Test //Jonas test
-    public void playerHandShouldNotBeEmpty(){
-
-
-        System.out.println("Players hand: " + goFish.playerOne.hand);
-        Assertions.assertNotEquals("", goFish.playerOne.hand);
-    }
-
     @Test
     public void dealCards(){
 
@@ -82,5 +74,7 @@ public class PlayingCardTest {
         goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         Assertions.assertNotEquals(52, goFish.deck.getCards().size());
     }
+
+
 
 }
