@@ -14,7 +14,13 @@ public class PlayingCardTest {
     @DisplayName("Skapar appen")
     @BeforeEach
     public void initiateGame(){
+        System.out.println("-------------Här börjar testet----------------");
         goFish.run();
+    }
+
+    @AfterEach
+    public void message(){
+        System.out.println("-------------Här slutar testet-------------");
     }
 
     @Test
@@ -24,7 +30,7 @@ public class PlayingCardTest {
 
     }
 
-    @RepeatedTest(10)
+    @RepeatedTest(4)
     public  void shuffle(){
 
         Deck shuffled = new Deck();
@@ -37,7 +43,6 @@ public class PlayingCardTest {
     @Test
     public void playerCardsShouldNotBeNull(){
 
-        System.out.println(goFish.playerOne.hand);
         assertNotNull(goFish.playerOne.hand);
     }
 
