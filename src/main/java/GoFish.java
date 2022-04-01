@@ -5,9 +5,11 @@ public class GoFish {
     Player playerOne;
     Player playerTwo;
     Deck deck;
+
     public static void main(String[] args) {
 
-}
+
+    }
 
     public void run(){
 
