@@ -58,11 +58,17 @@ public class PlayingCardTest {
     @Test
     public void dealCards(){
 
-        for (int i = 0; i <8 ; i++) {
+        for (int i = 0; i <7 ; i++) {
             goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         }
 
         Assertions.assertNotEquals("", goFish.playerOne.hand.toString());
+    }
+
+    @Test
+    public void sizeOfHandShouldReturnSeven () {
+
+        assertEquals(7, goFish.playerOne.hand.size());
     }
 
     // Andreas test

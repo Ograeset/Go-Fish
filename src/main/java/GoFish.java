@@ -19,7 +19,16 @@ public class GoFish {
 
         this.deck.initDeck();
         this.deck.shuffle();
-
+        deal();
 
     }
+
+    public void deal () {
+
+        for (int i = 0; i <7 ; i++) {
+            playerOne.hand.add(deck.getCards().poll());
+            playerTwo.hand.add(deck.getCards().poll());
+        }
+    }
+
 }
