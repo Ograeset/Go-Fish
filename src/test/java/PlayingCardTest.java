@@ -65,7 +65,6 @@ public class PlayingCardTest {
 
     @Test
     public void checkIfDeckHasLessCardsAfterDealing(){
-
         goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         Assertions.assertNotEquals(52,goFish.deck.getCards().size());
     }
