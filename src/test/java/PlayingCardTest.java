@@ -63,7 +63,7 @@ public class PlayingCardTest {
         Assertions.assertTrue(goFish.deck.getCards() instanceof LinkedList<Card>);
     }
 
-    @Test
+    @Test//Jonas test
     public void checkIfDeckHasLessCardsAfterDealing(){
         goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         Assertions.assertNotEquals(52,goFish.deck.getCards().size());
