@@ -33,8 +33,6 @@ public class SeleniumTest {
         searchBox.sendKeys("Tillbaka till framtiden");
         searchButton.click();
 
-        String title = webDriver.findElement(By.className("result_text")).getAttribute("href");
-
     }
 
 }

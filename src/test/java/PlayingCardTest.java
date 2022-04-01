@@ -24,7 +24,7 @@ public class PlayingCardTest {
 
     }
 
-    @RepeatedTest(10)
+    @RepeatedTest(1)
     public  void shuffle(){
 
         Deck shuffled = new Deck();
