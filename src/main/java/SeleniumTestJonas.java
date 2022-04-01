@@ -24,9 +24,8 @@ public class SeleniumTestJonas {
 
         webDriver.get("https://sv.wikipedia.org/wiki/Portal:Huvudsida");
 
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         Thread.sleep(3*1000);
-
         String siteName = webDriver.getTitle();
         System.out.println(siteName);
 
