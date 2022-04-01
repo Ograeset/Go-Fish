@@ -1,5 +1,4 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +8,11 @@ import java.time.Duration;
 
 public class SeleniumTest {
 
-    @Test
+    public static void main(String[] args) throws InterruptedException {
+       SeleniumTest seleniumTest = new SeleniumTest();
+               seleniumTest.andreasTest();
+    }
+
     public void andreasTest() throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
