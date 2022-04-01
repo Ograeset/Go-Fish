@@ -30,7 +30,11 @@ public class PlayingCardTest {
 
     }
 
+<<<<<<< HEAD
+    @RepeatedTest(1)
+=======
     @RepeatedTest(4)
+>>>>>>> 76f7e3042cb4fa577a5ee2b918187a85b544f933
     public  void shuffle(){
 
         Deck shuffled = new Deck();
