@@ -23,6 +23,12 @@ public class PlayingCardTest {
         System.out.println("-------------Här slutar testet-------------");
     }
 
+    @Test //Jonas test
+    public void startApp(){
+
+        Assertions.assertTrue(goFish.main());
+    }
+
     @Test
     public void shouldBe52(){
 
@@ -74,7 +80,5 @@ public class PlayingCardTest {
         goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         Assertions.assertNotEquals(52, goFish.deck.getCards().size());
     }
-
-
 
 }

@@ -1,14 +1,13 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class GoFish {
     Player playerOne;
     Player playerTwo;
     Deck deck;
 
-    public static void main(String[] args) {
+    public boolean main() {
 
+        run();
 
+        return true;
     }
 
     public void run(){
