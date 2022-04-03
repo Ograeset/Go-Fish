@@ -19,15 +19,21 @@ public class Deck {
         }else return true;
     }
 
+    public String[] Numbers = {"Two", "Three", "Four", "Five", "Six", "Seven",
+            "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"};
 
-    public enum Number { Two, Three, Four, Five, Six, Seven,
+    public String[] Suit = { "Spades", "Hearts", "Clubs", "Diamonds" };
+
+/*    public enum Number { Two, Three, Four, Five, Six, Seven,
         Eight, Nine, Ten, Jack, Queen, King, Ace }
 
     public enum Suit { Spades, Hearts, Clubs, Diamonds }
+*/
+
 
     public void initDeck(){
-        for (Suit s : Suit.values())
-            for (Number n : Number.values())
+        for (String s : Suit)
+            for (String n : Numbers)
                 this.cards.add(new Card(s, n));
     }
 

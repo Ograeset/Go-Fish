@@ -3,8 +3,7 @@ import org.junit.jupiter.api.*;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class PlayingCardTest {
@@ -21,13 +20,6 @@ public class PlayingCardTest {
     @AfterEach
     public void message(){
         System.out.println("-------------Här slutar testet-------------");
-    }
-
-    @Test
-    public void shouldBe52(){
-
-        Assertions.assertTrue(goFish.deck.getBool());
-
     }
 
 
@@ -51,11 +43,18 @@ public class PlayingCardTest {
         Assertions.assertNotEquals("", goFish.playerOne.hand.toString());
     }
 
-    // Nasir test
+    /****          Början Nasir test    ****/
     @Test
     public void sizeOfHandShouldReturnSeven () {
 
         assertEquals(7, goFish.playerOne.hand.size());
+    }
+
+    @Test
+    public void shouldBe52(){
+
+        Assertions.assertTrue(goFish.deck.getBool());
+
     }
 
     /*******    Slut Nasir test           *********/
@@ -72,6 +71,7 @@ public class PlayingCardTest {
 
         assertNotNull(goFish.playerOne.hand);
     }
+
 
     /*******    Slut Andreas test           *********/
 
