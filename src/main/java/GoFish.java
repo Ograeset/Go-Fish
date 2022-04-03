@@ -6,9 +6,11 @@ public class GoFish {
     Player playerTwo;
     Deck deck;
 
-    public static void main(String[] args) {
+    public boolean main() {
 
+        run();
 
+        return true;
     }
 
     public void run(){
