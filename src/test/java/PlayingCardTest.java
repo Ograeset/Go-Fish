@@ -83,9 +83,4 @@ public class PlayingCardTest {
         Assertions.assertNotEquals(52,goFish.deck.getCards().size());
     }
 
-    @Test //Jonas test
-    public void startApp(){
-
-        Assertions.assertTrue(goFish.main());
-    }
 }
