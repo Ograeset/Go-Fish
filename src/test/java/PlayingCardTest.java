@@ -76,8 +76,13 @@ public class PlayingCardTest {
     /*******    Slut Andreas test           *********/
 
 
+    /******    Början Jonas Test   ****/
+    @Test
+    public void startApp(){
 
-    @Test//Jonas test
+        Assertions.assertTrue(goFish.main());
+    }
+
     public void checkIfDeckHasLessCardsAfterDealing(){
         goFish.playerOne.hand.add(goFish.deck.getCards().poll());
         Assertions.assertNotEquals(52,goFish.deck.getCards().size());
