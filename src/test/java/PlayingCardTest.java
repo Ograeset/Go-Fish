@@ -42,12 +42,6 @@ public class PlayingCardTest {
     }
 
     @Test
-    public void playerCardsShouldNotBeNull(){
-
-        assertNotNull(goFish.playerOne.hand);
-    }
-
-    @Test
     public void dealCards(){
 
         for (int i = 0; i <7 ; i++) {
@@ -57,17 +51,31 @@ public class PlayingCardTest {
         Assertions.assertNotEquals("", goFish.playerOne.hand.toString());
     }
 
+    // Nasir test
     @Test
     public void sizeOfHandShouldReturnSeven () {
 
         assertEquals(7, goFish.playerOne.hand.size());
     }
 
-    // Andreas test
+    /*******    Slut Nasir test           *********/
+
+
+    /****          Början Andreas test    ****/
     @Test
     public void checkIfListIsAListOfCards(){
         Assertions.assertTrue(goFish.deck.getCards() instanceof LinkedList<Card>);
     }
+
+    @Test
+    public void playerCardsShouldNotBeNull(){
+
+        assertNotNull(goFish.playerOne.hand);
+    }
+
+    /*******    Slut Andreas test           *********/
+
+
 
     @Test//Jonas test
     public void checkIfDeckHasLessCardsAfterDealing(){
